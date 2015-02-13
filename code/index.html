@@ -1,2 +1,81 @@
-This is a docker test
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<title>Cinemax | Strike Back Games</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="title" content="Cinemax | Strike Back Games" />
+<meta name="description" content="Play three games inspired by the new Cinemax series Strike Back.  Test your skills in shooting, blade combat, and decryption. See if you have what it takes to become a Section 20 agent." />
+<meta name="keywords" content="Play Strike Back Games, Strike Back, Play shooting games, Section 20, Cinemax" />
+<link type="text/css" rel="Stylesheet" href="assets/css/Style.css" />
+<link rel="image_src" href="assets/images/logo/strikeback_logo.png" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript" src="assets/js/constants.js"></script>
+<script type="text/javascript" language="javascript" src="assets/js/Strikeback.js"></script>
+<!-- ********************************************************************************************************************************* -->
+<script type="text/javascript" src="assets/js/swfobject.js"></script>
+<script type="text/javascript" language="javascript">
+function init() {
 
+	var cb = 1;
+
+	var flashvars = {
+		asseturl: '/assets/core/',
+		cb: cb,
+		gaTag: FS.analytics.getGATag()
+	};
+	var params = {
+		wmode: "transparent"
+	};
+	var attributes = {
+		id: "swf"
+	};
+
+	document.getElementById("noflashwords").style.display = "none";
+	setTimeout( "shownoflashwords()", 5000 );
+
+	if (swfobject.hasFlashPlayerVersion("10.1")) 
+	{
+		//swfobject.embedSWF('assets/core/swf/strikeback_framework_lite.swf?cb=' + cb, "swf", "1200", "900", "10.1",'assets/core/swf/strikeback_framework_lite.swf?cb=' + cb, flashvars, params, attributes);
+		swfobject.embedSWF('assets/core/swf/strikeback_framework_lite.swf?cb=' + cb, "swf", "100%", "100%", "10.1",'assets/core/swf/strikeback_framework_lite.swf?cb=' + cb, flashvars, params, attributes);
+	}
+}
+  
+function shownoflashwords() 
+{
+	if (!swfobject.hasFlashPlayerVersion("10")) 
+	{
+		document.getElementById("noflashwords").style.display = "block";
+	}
+}
+</script>
+<script type="text/javascript">
+	var ga_account = FS.analytics.getGATag();
+	
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', ga_account]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body onload="init()">
+	<div id="bodycontainer">
+		<div class="swf common">
+			<div id="swf">
+				<div id="noflashwords" style="display: none">
+					<p>The best way to view this site is with the Adobe Flash Player.</p>
+					<p><a href="http://www.adobe.com/products/flashplayer/" target="_blank">Click here</a> to update your system with the latest Flash Player.</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

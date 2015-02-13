@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<title>Strikeback Splash Page</title>
+<link type="text/css" rel="Stylesheet" href="assets/css/Style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript" src="assets/js/constants.js"></script>
+<script type="text/javascript" language="javascript" src="assets/js/Strikeback.js"></script>
+<script type="text/javascript" language="javascript" src="assets/js/jquery.urlshortener.js"></script>
+<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='http://platform.twitter.com/anywhere.js?id=" + CONSTANTS.Twitter.apikey + "&v=1'><\/script>");
+</script>
+<!-- ********************************************************************************************************************************* -->
+<script type="text/javascript" src="assets/js/swfobject.js"></script>
+<script type="text/javascript" language="javascript">
+function init() {
+
+	var cb = 1;
+
+	var flashvars = {
+		asseturl: '/assets/core/',
+		cb: cb
+	};
+	var params = {
+		wmode: "transparent"
+	};
+	var attributes = {
+		id: "swf"
+	};
+
+	document.getElementById("noflashwords").style.display = "none";
+	setTimeout( "shownoflashwords()", 5000 );
+
+	if (swfobject.hasFlashPlayerVersion("10.1")) 
+	{
+		swfobject.embedSWF('assets/core/swf/strikeback_framework_lite.swf?cb=' + cb, "swf", "1200", "900", "10.1",'assets/core/swf/strikeback_framework_lite.swf?cb=' + cb, flashvars, params, attributes);
+	}
+}
+  
+function shownoflashwords() 
+{
+	if (!swfobject.hasFlashPlayerVersion("10")) 
+	{
+		document.getElementById("noflashwords").style.display = "block";
+	}
+}
+</script>
+</head>
+<body>
+
+<div id="bodycontainer">
+	<img src="assets/images/splash_content.jpg" alt="An operative has been captured in the field..." />
+</div>
+
+<div id="footer">
+	<div id="leftPanel">
+		<img src="assets/images/link_cinemax_privacy_policy.png" alt="Cinemax Privacy Policy" />
+		<img src="assets/images/link_terms_of_use.png" alt="Terms of Use" class="left_margin_20px" />
+		<br />
+		<img id="footer_copyright" src="assets/images/text_copyright.png" alt="&copy; 2011 Home Box Office, Inc. All Rights Reserved. This website is for viewing solely in the United States. This website might contain adult content." />
+	</div> 
+	<div id="cinemax_logo">
+		<img src="assets/images/logo_cinemax.png" alt="Cinemax Logo" />
+	</div>
+</div>
+</body>
+</html>

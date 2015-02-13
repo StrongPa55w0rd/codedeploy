@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<title>Strikeback</title>
+<link type="text/css" rel="Stylesheet" href="assets/css/Style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript" src="assets/js/constants.js"></script>
+<script type="text/javascript" language="javascript" src="assets/js/Strikeback.js"></script>
+<script type="text/javascript" language="javascript" src="assets/js/jquery.urlshortener.js"></script>
+<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='http://platform.twitter.com/anywhere.js?id=" + CONSTANTS.Twitter.apikey + "&v=1'><\/script>");
+</script>
+<!-- ********************************************************************************************************************************* -->
+<script type="text/javascript" src="assets/js/swfobject.js"></script>
+<script type="text/javascript" language="javascript">
+function init() {
+
+	var cb = 1;
+
+	var flashvars = {
+		asseturl: '/assets/decryption/',
+		cb: cb
+	};
+	var params = {
+		wmode: "transparent"
+	};
+	var attributes = {
+		id: "swf"
+	};
+
+	document.getElementById("noflashwords").style.display = "none";
+	setTimeout( "shownoflashwords()", 5000 );
+
+	if (swfobject.hasFlashPlayerVersion("10.1")) 
+	{
+		swfobject.embedSWF('assets/decryption/swf/decryption_framework_lite.swf?cb=' + cb, "swf", "1200", "900", "10.1",'assets/decryption/swf/decryption_framework_lite.swf?cb=' + cb, flashvars, params, attributes);
+	}
+}
+  
+function shownoflashwords() 
+{
+	if (!swfobject.hasFlashPlayerVersion("10")) 
+	{
+		document.getElementById("noflashwords").style.display = "block";
+	}
+}
+</script>
+</head>
+<body onload="init()">
+	<div id="bodycontainer">
+		<div class="swf common">
+			<div id="swf">
+				<div id="noflashwords" style="display: none">
+					<p>The best way to view this site is with the Adobe Flash Player.</p>
+					<p><a href="http://www.adobe.com/products/flashplayer/" target="_blank">Click here</a> to update your system with the latest Flash Player.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</head>

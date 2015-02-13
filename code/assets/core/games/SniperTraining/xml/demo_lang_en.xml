@@ -1,0 +1,7 @@
+<root>
+	<record>
+		<key><![CDATA[TestMessage1]]></key>
+		<value><![CDATA[This is the first text message. Now attempting to see if we can fit it inside the box. What will happen we wonder? What will happen indeed.]]></value>
+		<fontsize>14</fontsize>
+	</record>
+</root>

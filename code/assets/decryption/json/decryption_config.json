@@ -1,0 +1,9 @@
+{
+    "autoLoadVO": {
+        "swf_files": [
+            "decryption_modals.swf",
+            "decryption_view_game.swf",
+	    "decryption_audio.swf" 
+        ]
+    }
+}

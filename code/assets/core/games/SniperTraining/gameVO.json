@@ -1,0 +1,5 @@
+{
+	"mainSwf": "swf/sniperpractice_framework_lite.swf",
+	"gameType": "GameType_Game",
+	"entryPoint": "com.strikeback.sniperpractice.core.SniperPracticeFrameworkLite"
+}

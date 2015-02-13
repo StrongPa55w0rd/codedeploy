@@ -1,0 +1,9 @@
+{
+    "autoLoadVO": {
+        "swf_files": [
+            "demo_fonts_en.swf",
+            "modal_instructions.swf",
+            "view_game.swf" 
+        ]
+    }
+}

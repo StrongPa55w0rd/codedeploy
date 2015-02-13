@@ -1,0 +1,14 @@
+{
+    "autoLoadVO": {
+        "swf_files": [
+			"view_game.swf" ,
+            "audio.swf",
+            "modal_instructions.swf",
+            "modal_startscreen.swf",
+            "modal_results.swf"
+        ],
+		"json_files": [
+			"levels.json"
+		]
+    }
+}
