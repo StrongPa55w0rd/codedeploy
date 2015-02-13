@@ -1,5 +1,0 @@
-{
-	"mainSwf": "swf/decryption_framework_lite.swf",
-	"gameType": "GameType_Game",
-	"entryPoint": "com.strikeback.decryption.core.DecryptionFrameworkLite"
-}
